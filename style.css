@@ -1,0 +1,120 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    background-color: #f8f9fa;
+}
+
+.app-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.side-panel {
+    flex: 1;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.main-icon { font-size: 4rem; margin-bottom: 20px; }
+.side-panel h1 { font-size: 2.8rem; font-weight: 800; margin-bottom: 10px; }
+.side-panel p { opacity: 0.9; font-size: 1.1rem; }
+
+.form-panel {
+    flex: 2;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 60px; /* Large side padding */
+}
+
+#registrationForm {
+    width: 100%;
+    max-width: 800px;
+}
+
+.form-title {
+    font-weight: 700;
+    margin-bottom: 30px; /* Space after title */
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px; /* Increased padding between columns and rows */
+}
+
+.input-item {
+    margin-bottom: 5px; /* Added internal item spacing */
+}
+
+.input-item label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #6c757d;
+    margin-bottom: 8px; /* Space between label and input */
+}
+
+.input-item input, .input-item select {
+    width: 100%;
+    padding: 12px 15px; /* More padding inside the fields */
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+.input-item input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    outline: none;
+}
+
+.form-footer-area {
+    margin-top: 35px; /* Significant gap before footer */
+    padding-top: 25px;
+    border-top: 1px solid #f1f3f5;
+}
+
+.checkbox-stack {
+    margin-bottom: 25px;
+}
+
+.custom-check {
+    margin-bottom: 10px; /* Spacing between checkboxes */
+}
+
+.action-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.submit-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 45px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.submit-btn:hover { background: #0056b3; }
+
+.login-link { margin: 0; color: #6c757d; font-size: 0.95rem; }
+.login-link a { color: #007bff; text-decoration: none; font-weight: 600; }
